@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+if (instance_exists(card_game_controller_obj))
+{
+	if (card_game_controller_obj.card_game_phase == GAME_PHASE.HOW_TO_PLAY)
+	{
+		exit;
+	}
+}
+
 draw_set_font(display_font);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -22,7 +31,7 @@ draw_text(x+28+64*2+18,y+10,string(resource_value_suit3));
 draw_set_font(card_small_ft);
 draw_set_color(c_gray);
 draw_text(x+28+18-24,y+10+24,"Military");
-draw_text(x+28+64+18-24,y+10+24,"Civilian");
+draw_text(x+28+64+18-24,y+10+24,"Economy");
 draw_text(x+28+64*2+18-24,y+10+24,"Science");
 draw_set_font(display_font);
 draw_set_color(c_black);
@@ -30,7 +39,7 @@ draw_set_color(c_black);
 var setup_phase = false;
 if (instance_exists(card_game_controller_obj))
 {
-	if (card_game_controller_obj.card_game_phase == GAME_PHASE.NOT_STARTED)
+	if (card_game_controller_obj.card_game_phase == GAME_PHASE.CHOOSE_RESOURCES)
 	{
 		setup_phase = true;
 		
@@ -124,10 +133,32 @@ else
 		draw_text(x+28,y-10-10,"player");
 		
 		draw_sprite(cheat_sheet_spr,0,x+sprite_width-16,y-20);
+		
+		for (var i = 1; i <= 2; i++)
+		{
+			var pip_sub = 0;
+			if (card_game_controller_obj.rounds_won_player >= i)
+			{
+				pip_sub = 1;
+			}
+			
+			draw_sprite(rounds_won_pip_spr, pip_sub, x+8*(i-1)+140, y-6);
+		}
 	}
 	else if (type == "opponent")
 	{
 		draw_text(x+28,y-10-10,"opponent");
+		
+		for (var i = 1; i <= 2; i++)
+		{
+			var pip_sub = 0;
+			if (card_game_controller_obj.rounds_won_opponent >= i)
+			{
+				pip_sub = 1;
+			}
+			
+			draw_sprite(rounds_won_pip_spr, pip_sub, x+8*(i-1)+140, y-6);
+		}
 	}
 	
 	

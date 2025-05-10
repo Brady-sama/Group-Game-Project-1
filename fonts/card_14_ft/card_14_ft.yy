@@ -263,7 +263,7 @@
   "resourceType":"GMFont",
   "resourceVersion":"2.0",
   "sampleText":"abcdef ABCDEF\n0123456789 .,<>\"'&!?\nthe quick brown fox jumps over the lazy dog\nTHE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\nDefault character: ▯ (9647)",
-  "sdfSpread":6,
+  "sdfSpread":2,
   "size":14.0,
   "styleName":"Bold",
   "textureGroupId":{

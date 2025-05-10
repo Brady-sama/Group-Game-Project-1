@@ -8,113 +8,113 @@ function init_map(){
 
 	//Station 1
 	var _new_map_element = ds_map_create();
-	_new_map_element[? "sprite"] = map_indicator_station_spr;
+	_new_map_element[? "sprite"] = map_indicator_stellar_junction_spr;
 	_new_map_element[? "type"] = "station";
-	_new_map_element[? "name"] = "Station 1";
-	_new_map_element[? "room"] = Station1Room;
+	_new_map_element[? "name"] = "Stellar Junction";
+	_new_map_element[? "room"] = StellarJunctionRoom;
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 1";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Dusty Crossroads";
+	_new_map_element[? "events_possible"] = [ "event_cactus", "event_corpses", "event_abandoned_train", "event_grass", "event_abyss", "event_distortion", "event_stopped_train", "event_engine_failure", "event_cargo", "event_hovercart", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 2";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Baleful Woods";
+	_new_map_element[? "events_possible"] = [ "event_cactus", "event_corpses", "event_abandoned_train", "event_grass", "event_abyss", "event_distortion", "event_stopped_train", "event_engine_failure", "event_cargo", "event_hovercart", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Station 2
 	var _new_map_element = ds_map_create();
-	_new_map_element[? "sprite"] = map_indicator_station_spr;
+	_new_map_element[? "sprite"] = map_indicator_emerald_lake_spr;
 	_new_map_element[? "type"] = "station";
-	_new_map_element[? "name"] = "Station 2";
-	_new_map_element[? "room"] = Station2Room;
+	_new_map_element[? "name"] = "Emerald Lake";
+	_new_map_element[? "room"] = EmeraldLakeRoom;
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 3";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Cratered Valley";
+	_new_map_element[? "events_possible"] = [ "event_pond", "event_travelers", "event_hills", "event_barricade", "event_gunfire", "event_nothingness", "event_tree", "event_mountain", "event_tower", "event_dog", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 4";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Bloodied Field";
+	_new_map_element[? "events_possible"] = [ "event_pond", "event_travelers", "event_hills", "event_barricade", "event_gunfire", "event_nothingness", "event_tree", "event_mountain", "event_tower", "event_dog", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Station 3
 	var _new_map_element = ds_map_create();
-	_new_map_element[? "sprite"] = map_indicator_station_spr;
+	_new_map_element[? "sprite"] = map_indicator_fort_endurance_spr;
 	_new_map_element[? "type"] = "station";
-	_new_map_element[? "name"] = "Station 3";
-	_new_map_element[? "room"] = Station3Room;
+	_new_map_element[? "name"] = "Fort Endurance";
+	_new_map_element[? "room"] = FortEnduranceRoom;
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 5";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "The Drop-off";
+	_new_map_element[? "events_possible"] = [ "event_pond", "event_travelers", "event_hills", "event_barricade", "event_gunfire", "event_nothingness", "event_tree", "event_mountain", "event_tower", "event_dog", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 6";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Eerie Swamp";
+	_new_map_element[? "events_possible"] = [ "event_pond", "event_travelers", "event_hills", "event_barricade", "event_gunfire", "event_nothingness", "event_tree", "event_mountain", "event_tower", "event_dog", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Station 4
 	var _new_map_element = ds_map_create();
-	_new_map_element[? "sprite"] = map_indicator_station_spr;
+	_new_map_element[? "sprite"] = map_indicator_grand_cuckoo_station_spr;
 	_new_map_element[? "type"] = "station";
-	_new_map_element[? "name"] = "Station 4";
-	_new_map_element[? "room"] = Station4Room;
+	_new_map_element[? "name"] = "Grand Cuckoo Station";
+	_new_map_element[? "room"] = GrandCuckooStationRoom;
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 7";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Cog Mines";
+	_new_map_element[? "events_possible"] = [ "event_sacrifice", "event_melvin", "event_batteries1", "event_batteries2",  "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 8";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "Abandoned Farms";
+	_new_map_element[? "events_possible"] = [ "event_sacrifice", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Road Event
 	var _new_map_element = ds_map_create();
 	_new_map_element[? "sprite"] = map_indicator_event_spr;
 	_new_map_element[? "type"] = "event";
-	_new_map_element[? "name"] = "Road Event 9";
-	_new_map_element[? "events_possible"] = [ "test_event1", "test_event2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10" ];
+	_new_map_element[? "name"] = "The Dread Plains";
+	_new_map_element[? "events_possible"] = [ "event_sacrifice", "event_melvin", "event_batteries1", "event_batteries2", "test_event3", "test_event4", "test_event5", "test_event6", "test_event7", "test_event8", "test_event9", "test_event10", "event_radiation_zone", "event_sentry", "event_gamble", "event_stampede", "event_slavers", "event_power_plant", "event_old_mission", "event_ghost_town" ];
 	ds_list_add(global._map_list, _new_map_element);
 	
 	//Station 5
 	var _new_map_element = ds_map_create();
-	_new_map_element[? "sprite"] = map_indicator_station_spr;
+	_new_map_element[? "sprite"] = map_indicator_the_nexus_spr;
 	_new_map_element[? "type"] = "station";
-	_new_map_element[? "name"] = "Station 5";
-	_new_map_element[? "room"] = Station5Room;
+	_new_map_element[? "name"] = "The Nexus";
+	_new_map_element[? "room"] = TheNexusRoom;
 	ds_list_add(global._map_list, _new_map_element);
 }

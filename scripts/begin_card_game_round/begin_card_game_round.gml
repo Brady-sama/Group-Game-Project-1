@@ -16,6 +16,7 @@ function begin_card_game_round(){
 	ds_list_add(player_deck,"Gray 4");
 	ds_list_add(player_deck,"Gray 5");
 	
+	
 	var player_suit1_value = 0;
 	var player_suit2_value = 0;
 	var player_suit3_value = 0;
@@ -27,7 +28,7 @@ function begin_card_game_round(){
 		} 
 	}
 	for (var i = 1; i <= player_suit1_value; i++) { ds_list_add(player_deck,"Military "+string(i)); }
-	for (var i = 1; i <= player_suit2_value; i++) { ds_list_add(player_deck,"Civilian "+string(i)); }
+	for (var i = 1; i <= player_suit2_value; i++) { ds_list_add(player_deck,"Economy "+string(i)); }
 	for (var i = 1; i <= player_suit3_value; i++) { ds_list_add(player_deck,"Science "+string(i)); }
 	ds_list_shuffle(player_deck);
 	
@@ -50,7 +51,7 @@ function begin_card_game_round(){
 		} 
 	}
 	for (var i = 1; i <= opponent_suit1_value; i++) { ds_list_add(opponent_deck,"Military "+string(i)); }
-	for (var i = 1; i <= opponent_suit2_value; i++) { ds_list_add(opponent_deck,"Civilian "+string(i)); }
+	for (var i = 1; i <= opponent_suit2_value; i++) { ds_list_add(opponent_deck,"Economy "+string(i)); }
 	for (var i = 1; i <= opponent_suit3_value; i++) { ds_list_add(opponent_deck,"Science "+string(i)); }
 	ds_list_shuffle(opponent_deck);
 	
